@@ -27,3 +27,18 @@ const arrNumbers = [3, 5, 4, 2, 19, 10, 1]
 for (i = 0; i < arrNumbers.length; i++) {
     console.log(`O número do índice ${i} é ${arrNumbers[i]}`)
 }
+console.log('////////////////////////')
+
+//FIX02
+for(i = 0; i<50; i++){
+    console.log(2*i);
+}
+
+console.log('////////////////////////')
+
+//FIX02
+let word = 'bola'
+
+for(i = 0; i<word.length; i++){
+    console.log(word[i].toUpperCase())
+}

@@ -1,5 +1,10 @@
-const arrNumbers = [3, 5, 4, 2, 19, 10, 1]
+//FIX01
+userStatus = prompt('Qual seu usuário?').toUpperCase()
 
-for(i = 0; i < arrNumbers.length; i++){
-    console.log(arrNumbers[i])
+while(userStatus !== 'A'){
+    prompt('Qual seu usuário?').toUpperCase()
+    if(userStatus !== 'A'){
+        console.log('Acesso negado')
+    }
 }
+console.log('Boas vindas, adm')
