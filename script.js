@@ -75,3 +75,53 @@ console.log("Fim do for array.")
 
 
 
+// Exercicio de fixação
+/* 1) Utilizando o laço while, escreva um código que recebe um prompt esperando
+seu tipo de usuário. O tipo de usuário é representado pelas letras abaixo.
+- "A": Administrador;
+- "B": Usuário comum;
+- "C": Usuário assinante
+Enquanto o valor passado for diferente da letra que representa "administrador",
+o laço deve se repetir, exibindo a mensagem: "Acesso negado".
+Quando o valor for igual ao da letra que representa "administrador", o laço
+deve parar e a mensagem "Boas vindas, admin!" deve ser impressa.*/
+
+let usertype = prompt(`Digite o seu tipo de usuário! \n "A" para Administrador \n "B" para Usuário comum \n "C" para Usuário assinante.`).toLowerCase()
+
+while(usertype !== "a"){
+
+    console.log("Acesso negado!")
+    
+    usertype = prompt(`Digite o seu tipo de usuário! \n "A" para Administrador \n "B" para Usuário comum \n "C" para Usuário assinante.`).toLowerCase()
+}
+console.log("Boas vindas, admin!")
+
+// 2) Escreva, utilizando o laço for, um programa que escreva a tabuada do número aleatório.
+
+// variável = number(prompt("string"))
+// for(variavel i = valor inicial; variavel i <= 10; i++) que significa (variavel i + 1){
+// console.log(`${variavel} x ${variavel i} = ${variavel * variavel i}`)
+// console.log("Fim.")
+//}
+
+let numeroAleatorio = Number(prompt("Digite um número aleatório para ver sua tabuada."))
+
+for(let i = 1; i <= 10; i++){
+
+    console.log(`${numeroAleatorio} x ${i} = ${numeroAleatorio * i}`)
+}
+console.log("Fim da tabuada!")
+
+// 3) Crie um laço for que recebe um array de strings, e imprima no console
+// a string em caixa alta.
+
+// variavel = array [elementos]
+// for(let i = numero inicial para posição do array; i menor que variavel de array
+// .length; i++) (incremento/indice +1){
+// console.log(variavel de array[variavel i].toUpperCase)}
+
+const meusPets = ["Ully", "Thor", "Bob", "Alfredo", "Zoe"]
+
+for(let i = 0; i < meusPets.length; i++){
+    console.log(meusPets[i].toUpperCase())
+}
